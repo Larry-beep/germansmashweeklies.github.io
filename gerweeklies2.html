@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_69194519e88a4b0b8b39fe2fd30d55d1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_69194519e88a4b0b8b39fe2fd30d55d1" ></div>
+        
+</body>
+<script>    
+    
+            var map_69194519e88a4b0b8b39fe2fd30d55d1 = L.map(
+                "map_69194519e88a4b0b8b39fe2fd30d55d1",
+                {
+                    center: [51.079552, 10.328164],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6.8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2e90bde3ff5845d2a37a49f9a14a8585 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var marker_16a82376fce8458591db1cd03d69541f = L.marker(
+                [49.86879075750273, 8.662456556762125],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_7b40e01399064e5f96283fe21519684d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_16a82376fce8458591db1cd03d69541f.setIcon(icon_7b40e01399064e5f96283fe21519684d);
+        
+    
+        var popup_ab8b2104513b4e719604f8f219baef1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2ee1fa9dfbf4b07a0d61e248f47732d = $(`<div id="html_e2ee1fa9dfbf4b07a0d61e248f47732d" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Smash'n'Sip</h1>                        <strong>Dienstag, Darmstadt - Hessen</strong>                        <a href=https://discord.gg/gdhCQpzKb2 >                        <img src="https://images.smash.gg/images/tournament/305395/image-f741ebed93fd7ca561b5e5cde96bc5ff.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_ab8b2104513b4e719604f8f219baef1c.setContent(html_e2ee1fa9dfbf4b07a0d61e248f47732d);
+        
+
+        marker_16a82376fce8458591db1cd03d69541f.bindPopup(popup_ab8b2104513b4e719604f8f219baef1c)
+        ;
+
+        
+    
+    
+            marker_16a82376fce8458591db1cd03d69541f.bindTooltip(
+                `<div>
+                     Smash'n'Sip
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42c696e440134116a1e118e3a7b648c4 = L.marker(
+                [50.002360899917285, 8.205891105956603],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_a8325c5e86ab4746a7b5dee7ba5e26a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_42c696e440134116a1e118e3a7b648c4.setIcon(icon_a8325c5e86ab4746a7b5dee7ba5e26a5);
+        
+    
+        var popup_16e9e4e72ec84ea88febd9473d9507d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b9dd83a2172445f8e4464911df6e52d = $(`<div id="html_3b9dd83a2172445f8e4464911df6e52d" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Local Smash Dojo</h1>                        <strong>Freitag, Mainz - Rheinland-Pfalz</strong>                        <a href=https://discord.gg/Q49Dbky >                        <img src="https://images.smash.gg/images/tournament/306111/image-4efd744713098ad04913c873c8c4df40.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_16e9e4e72ec84ea88febd9473d9507d8.setContent(html_3b9dd83a2172445f8e4464911df6e52d);
+        
+
+        marker_42c696e440134116a1e118e3a7b648c4.bindPopup(popup_16e9e4e72ec84ea88febd9473d9507d8)
+        ;
+
+        
+    
+    
+            marker_42c696e440134116a1e118e3a7b648c4.bindTooltip(
+                `<div>
+                     Local Smash Dojo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccddeb1a9b594e2d8d72a4b81e1313e5 = L.marker(
+                [49.439848473482336, 8.523959934552332],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_b59a354a032d4730ba108dfffa909fd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ccddeb1a9b594e2d8d72a4b81e1313e5.setIcon(icon_b59a354a032d4730ba108dfffa909fd6);
+        
+    
+        var popup_c30f4e761bbf44c69e934b3f48aee0e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a99ffcbbf4354385a45eb0e3473e2cea = $(`<div id="html_a99ffcbbf4354385a45eb0e3473e2cea" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">ERN Weekly</h1>                        <strong>Dienstag, Mannheim - Baden-Württemberg</strong>                        <a href=https://discord.com/invite/6hcmDjc466 >                        <img src="https://pbs.twimg.com/profile_images/1097589300705804288/zuFnExvs_400x400.png" alt="Selfhtml">                        </a></div>`)[0];
+            popup_c30f4e761bbf44c69e934b3f48aee0e9.setContent(html_a99ffcbbf4354385a45eb0e3473e2cea);
+        
+
+        marker_ccddeb1a9b594e2d8d72a4b81e1313e5.bindPopup(popup_c30f4e761bbf44c69e934b3f48aee0e9)
+        ;
+
+        
+    
+    
+            marker_ccddeb1a9b594e2d8d72a4b81e1313e5.bindTooltip(
+                `<div>
+                     ERN Weekly
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bcb4fc404874e459dacca4c32250670 = L.marker(
+                [53.55047111703184, 9.95641969322535],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_05d4bb9fa8c847cd9c0b0899bae49156 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9bcb4fc404874e459dacca4c32250670.setIcon(icon_05d4bb9fa8c847cd9c0b0899bae49156);
+        
+    
+        var popup_01e07a153f564224b3508a56a065063d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d34c4ed44474860b78ba8cdf4b78c3c = $(`<div id="html_1d34c4ed44474860b78ba8cdf4b78c3c" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">United Cyber Spaces</h1>                        <strong>Samstag, Hamburg</strong>                        <a href=https://discord.com/invite/d3D5JWvspH >                        <img src="https://images.smash.gg/images/tournament/303773/image-c6fbbc99010f78dfa2b387b397d272db.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_01e07a153f564224b3508a56a065063d.setContent(html_1d34c4ed44474860b78ba8cdf4b78c3c);
+        
+
+        marker_9bcb4fc404874e459dacca4c32250670.bindPopup(popup_01e07a153f564224b3508a56a065063d)
+        ;
+
+        
+    
+    
+            marker_9bcb4fc404874e459dacca4c32250670.bindTooltip(
+                `<div>
+                     United Cyber Spaces
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1756796b5cf442d6bc1e6139743cfaef = L.marker(
+                [51.42862666143756, 6.888170093034005],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_73b58e313ac54004ae3ffc8beb0865dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1756796b5cf442d6bc1e6139743cfaef.setIcon(icon_73b58e313ac54004ae3ffc8beb0865dd);
+        
+    
+        var popup_b460b196de1744a7b9c26b9fa502d22a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90e7e13fa5b24596b5eeb8e25faecda9 = $(`<div id="html_90e7e13fa5b24596b5eeb8e25faecda9" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Tech Thursday</h1>                        <strong>Donnerstag&Freitag, Mülheim an der Ruhr - Nordrhein-Westfalen</strong>                        <a href=https://twitter.com/Zinnobar_MH >                        <img src="https://images.smash.gg/images/tournament/305893/image-70ffe556ca9cf601706b5979abd592aa.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_b460b196de1744a7b9c26b9fa502d22a.setContent(html_90e7e13fa5b24596b5eeb8e25faecda9);
+        
+
+        marker_1756796b5cf442d6bc1e6139743cfaef.bindPopup(popup_b460b196de1744a7b9c26b9fa502d22a)
+        ;
+
+        
+    
+    
+            marker_1756796b5cf442d6bc1e6139743cfaef.bindTooltip(
+                `<div>
+                     Tech Thursday
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_337dc91160434f89ad212c436d462751 = L.marker(
+                [49.44603315315504, 11.04928803929211],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_939a8ba893794179832c948ea0e36de7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_337dc91160434f89ad212c436d462751.setIcon(icon_939a8ba893794179832c948ea0e36de7);
+        
+    
+        var popup_5c6fe176e4974b989fcf60ae88c10859 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_590a2a1926b44f07af64d1cd370617f2 = $(`<div id="html_590a2a1926b44f07af64d1cd370617f2" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">D.U.S. Weekly</h1>                        <strong>Samstag, Nürnberg - Bayern</strong>                        <a href=https://discord.com/invite/4HtRPHZjkQ >                        <img src="https://images.smash.gg/images/tournament/306109/image-0fd33a845e79dd54ba22355a21ecaa92.jpg?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_5c6fe176e4974b989fcf60ae88c10859.setContent(html_590a2a1926b44f07af64d1cd370617f2);
+        
+
+        marker_337dc91160434f89ad212c436d462751.bindPopup(popup_5c6fe176e4974b989fcf60ae88c10859)
+        ;
+
+        
+    
+    
+            marker_337dc91160434f89ad212c436d462751.bindTooltip(
+                `<div>
+                     D.U.S. Weekly
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc0b045f301144f4ae566ea257a8445f = L.marker(
+                [48.81977794840759, 9.274310507067414],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_b25f3fc1a73547c48f0407d2df88a20a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc0b045f301144f4ae566ea257a8445f.setIcon(icon_b25f3fc1a73547c48f0407d2df88a20a);
+        
+    
+        var popup_8929296c3a424b2fb37cbcd7d228a176 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa4398cb0b1c4fa8ad106ea4d1da8a3b = $(`<div id="html_fa4398cb0b1c4fa8ad106ea4d1da8a3b" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Clutch23</h1>                        <strong>Mittwoch, Fellbach - Baden-Württemberg</strong>                        <a href=https://discord.com/invite/Yh9SvSr >                        <img src="https://images.smash.gg/images/tournament/305476/image-1d90001aa4dbb6b00e2107f46b085975.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_8929296c3a424b2fb37cbcd7d228a176.setContent(html_fa4398cb0b1c4fa8ad106ea4d1da8a3b);
+        
+
+        marker_dc0b045f301144f4ae566ea257a8445f.bindPopup(popup_8929296c3a424b2fb37cbcd7d228a176)
+        ;
+
+        
+    
+    
+            marker_dc0b045f301144f4ae566ea257a8445f.bindTooltip(
+                `<div>
+                     Clutch23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8609a0b6cfc849aeb0f4d528567f9a8c = L.marker(
+                [48.17066659721476, 11.351019004839161],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_fbde3ae6ec994ae7b2cc39be0e4c4880 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8609a0b6cfc849aeb0f4d528567f9a8c.setIcon(icon_fbde3ae6ec994ae7b2cc39be0e4c4880);
+        
+    
+        var popup_e59db1a6005a4236b2c5fb4aa6a38b5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b1f93c9b4d0457082f8112e5229c15b = $(`<div id="html_0b1f93c9b4d0457082f8112e5229c15b" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Munich Smash Night</h1>                        <strong>Freitag, Puchheim - Bayern</strong>                        <a href=https://discordapp.com/invite/tm2azmK >                        <img src="https://pbs.twimg.com/profile_images/1020396129517735936/nL2DajZl_400x400.jpg" alt="Selfhtml">                        </a></div>`)[0];
+            popup_e59db1a6005a4236b2c5fb4aa6a38b5f.setContent(html_0b1f93c9b4d0457082f8112e5229c15b);
+        
+
+        marker_8609a0b6cfc849aeb0f4d528567f9a8c.bindPopup(popup_e59db1a6005a4236b2c5fb4aa6a38b5f)
+        ;
+
+        
+    
+    
+            marker_8609a0b6cfc849aeb0f4d528567f9a8c.bindTooltip(
+                `<div>
+                     Munich Smash Night
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67783a8f8a8e46c590e53b9bae233885 = L.marker(
+                [52.26409465156397, 10.522849964225435],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_bd57b64292074c5995aeca85fdaac78b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67783a8f8a8e46c590e53b9bae233885.setIcon(icon_bd57b64292074c5995aeca85fdaac78b);
+        
+    
+        var popup_3c58c0e76a0b469695aa98657916836d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5192257e012b4a50b20b4c78a72407aa = $(`<div id="html_5192257e012b4a50b20b4c78a72407aa" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Virtua Weekly</h1>                        <strong>Freitag, Braunschweig - Niedersachsen</strong>                        <a href=https://www.virtualounge.de/smash-turnier-smash-bros-turnier/#virtuaweekly >                        <img src="https://pbs.twimg.com/profile_images/882928532254543872/__6eknKP_400x400.jpg" alt="Selfhtml">                        </a></div>`)[0];
+            popup_3c58c0e76a0b469695aa98657916836d.setContent(html_5192257e012b4a50b20b4c78a72407aa);
+        
+
+        marker_67783a8f8a8e46c590e53b9bae233885.bindPopup(popup_3c58c0e76a0b469695aa98657916836d)
+        ;
+
+        
+    
+    
+            marker_67783a8f8a8e46c590e53b9bae233885.bindTooltip(
+                `<div>
+                     Virtua Weekly
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3f32341abf943f99940bdea03d4e92e = L.marker(
+                [51.06344096042115, 13.756481873147647],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_d0a2c051affc49cf944bd22e6e43ed84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3f32341abf943f99940bdea03d4e92e.setIcon(icon_d0a2c051affc49cf944bd22e6e43ed84);
+        
+    
+        var popup_ba0b41ebab39470ea2ca3d8feceb9d8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3eee33eaf7414350aa8f4a7652590960 = $(`<div id="html_3eee33eaf7414350aa8f4a7652590960" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Dresden Weekly</h1>                        <strong>Donnerstag, Dresden - Sachsen</strong>                        <a href=https://discord.gg/BQBpD6G >                        <img src="https://pbs.twimg.com/profile_images/1107541654255398912/qZCky0gb_400x400.png" alt="Selfhtml">                        </a></div>`)[0];
+            popup_ba0b41ebab39470ea2ca3d8feceb9d8f.setContent(html_3eee33eaf7414350aa8f4a7652590960);
+        
+
+        marker_c3f32341abf943f99940bdea03d4e92e.bindPopup(popup_ba0b41ebab39470ea2ca3d8feceb9d8f)
+        ;
+
+        
+    
+    
+            marker_c3f32341abf943f99940bdea03d4e92e.bindTooltip(
+                `<div>
+                     Dresden Weekly
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17ca22fb02434b2c84b51ede69a4566f = L.marker(
+                [50.808413713194305, 6.4835341424548165],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_69d55aac62f74d718a127fa029aa4efe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_17ca22fb02434b2c84b51ede69a4566f.setIcon(icon_69d55aac62f74d718a127fa029aa4efe);
+        
+    
+        var popup_299f5a4300c648818fda2e0158d24122 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e6a2423239f448ebdbe8065b787e53c = $(`<div id="html_5e6a2423239f448ebdbe8065b787e53c" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Dash Dancers Düren</h1>                        <strong>Freitag, Düren - Nordrhein-Westfalen</strong>                        <a href=https://twitter.com/SSBM_SG >                        <img src="https://images.smash.gg/images/tournament/301554/image-380239461d97f6f32ae4c40a2f9fa56a.jpg?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_299f5a4300c648818fda2e0158d24122.setContent(html_5e6a2423239f448ebdbe8065b787e53c);
+        
+
+        marker_17ca22fb02434b2c84b51ede69a4566f.bindPopup(popup_299f5a4300c648818fda2e0158d24122)
+        ;
+
+        
+    
+    
+            marker_17ca22fb02434b2c84b51ede69a4566f.bindTooltip(
+                `<div>
+                     Dash Dancers Düren
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee3a1c4e2bce4cd3b0d51ef9af695619 = L.marker(
+                [51.190148100334135, 6.822976036371508],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_42666f1d26bc4e559bb84f280eefbef5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee3a1c4e2bce4cd3b0d51ef9af695619.setIcon(icon_42666f1d26bc4e559bb84f280eefbef5);
+        
+    
+        var popup_6c1843d6964d4dc28a4cd8c30293ec71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f9ccfb50d754234ab007cde53267d1c = $(`<div id="html_4f9ccfb50d754234ab007cde53267d1c" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Smash im Hinterhof</h1>                        <strong>Freitag (Bi-Weekly), Düsseldorf - Nordrhein-Westfalen</strong>                        <a href=https://discord.gg/WN2Ps3b >                        <img src="https://images.smash.gg/images/tournament/297577/image-bf23a8c191e91aa8f55bfe188741bf50.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_6c1843d6964d4dc28a4cd8c30293ec71.setContent(html_4f9ccfb50d754234ab007cde53267d1c);
+        
+
+        marker_ee3a1c4e2bce4cd3b0d51ef9af695619.bindPopup(popup_6c1843d6964d4dc28a4cd8c30293ec71)
+        ;
+
+        
+    
+    
+            marker_ee3a1c4e2bce4cd3b0d51ef9af695619.bindTooltip(
+                `<div>
+                     Smash im Hinterhof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_495bef1458d8425f8df5fc0ff34ea356 = L.marker(
+                [48.1488862608608, 11.539140771213848],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_a11d4e8b6bde41e891af97b92473217e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_495bef1458d8425f8df5fc0ff34ea356.setIcon(icon_a11d4e8b6bde41e891af97b92473217e);
+        
+    
+        var popup_5958def9b58940698e0cce1c68f71e16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f83d833123946c1b8a59f298525be6e = $(`<div id="html_9f83d833123946c1b8a59f298525be6e" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Munich eSports Reborn</h1>                        <strong>Mittwoch, München - Bayern</strong>                        <a href=https://discordapp.com/invite/tm2azmK >                        <img src="https://images.smash.gg/images/tournament/300111/image-81698fb6234d0d0c601c39cdc83bb544.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_5958def9b58940698e0cce1c68f71e16.setContent(html_9f83d833123946c1b8a59f298525be6e);
+        
+
+        marker_495bef1458d8425f8df5fc0ff34ea356.bindPopup(popup_5958def9b58940698e0cce1c68f71e16)
+        ;
+
+        
+    
+    
+            marker_495bef1458d8425f8df5fc0ff34ea356.bindTooltip(
+                `<div>
+                     Munich eSports Reborn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87aa05e477a84bd9a22ce3b8e1cbc944 = L.marker(
+                [52.51979346572881, 13.406919424162698],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_a92d5e9cd19a43c88ec9469ba6aeab1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87aa05e477a84bd9a22ce3b8e1cbc944.setIcon(icon_a92d5e9cd19a43c88ec9469ba6aeab1a);
+        
+    
+        var popup_536f33429feb42dea24d2bb7f93eb141 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef646650da1c4fa4b6df2f3716eacf6f = $(`<div id="html_ef646650da1c4fa4b6df2f3716eacf6f" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">BREXIT Summit</h1>                        <strong>Mittwoch, Berlin</strong>                        <a href=https://discord.com/invite/NMECDS8e>                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/1c3534a7-8a10-464a-99c4-a268a4944d6d-profile_image-70x70.png" alt="Selfhtml">                        </a></div>`)[0];
+            popup_536f33429feb42dea24d2bb7f93eb141.setContent(html_ef646650da1c4fa4b6df2f3716eacf6f);
+        
+
+        marker_87aa05e477a84bd9a22ce3b8e1cbc944.bindPopup(popup_536f33429feb42dea24d2bb7f93eb141)
+        ;
+
+        
+    
+    
+            marker_87aa05e477a84bd9a22ce3b8e1cbc944.bindTooltip(
+                `<div>
+                     BREXIT Summit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c06398a784547259f8de8b591698ec0 = L.marker(
+                [49.78726385861762, 9.923453857239865],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_573d8fb8f41a4e80800721a9f28cb315 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1c06398a784547259f8de8b591698ec0.setIcon(icon_573d8fb8f41a4e80800721a9f28cb315);
+        
+    
+        var popup_f6da26d047dd4d12a9156285f1e2715c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1758672ec6ea487eaa58d3d0a1b5a7bb = $(`<div id="html_1758672ec6ea487eaa58d3d0a1b5a7bb" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Würzburg Grind</h1>                        <strong>Inaktiv, Würzburg - Bayern</strong>                        <a href=https://discordapp.com/invite/tm2azmK >                        <img src="https://images.smash.gg/images/tournament/173289/image-73f5975bdaec5adda118faaedf19fa16.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_f6da26d047dd4d12a9156285f1e2715c.setContent(html_1758672ec6ea487eaa58d3d0a1b5a7bb);
+        
+
+        marker_1c06398a784547259f8de8b591698ec0.bindPopup(popup_f6da26d047dd4d12a9156285f1e2715c)
+        ;
+
+        
+    
+    
+            marker_1c06398a784547259f8de8b591698ec0.bindTooltip(
+                `<div>
+                     Würzburg Grind
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9c078e464b9496d95c81774975dc38c = L.marker(
+                [50.928785778515845, 6.937997992342979],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_1d82f13ff4fe4abc993952038eed048c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_f9c078e464b9496d95c81774975dc38c.setIcon(icon_1d82f13ff4fe4abc993952038eed048c);
+        
+    
+        var popup_c09a0b6aca3f43209aefee7547657c33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be3e5d7f0fd64ebe941a014ea4f651be = $(`<div id="html_be3e5d7f0fd64ebe941a014ea4f651be" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Weicheischuppen Jr.</h1>                        <strong>Inaktiv, Köln - Nordrhein-Westfalen</strong>                        <a href=https://discordapp.com/invite/Aba35kP >                        <img src="https://images.smash.gg/images/tournament/203354/image-623e0c247002cdf892220e2aabf76882.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_c09a0b6aca3f43209aefee7547657c33.setContent(html_be3e5d7f0fd64ebe941a014ea4f651be);
+        
+
+        marker_f9c078e464b9496d95c81774975dc38c.bindPopup(popup_c09a0b6aca3f43209aefee7547657c33)
+        ;
+
+        
+    
+    
+            marker_f9c078e464b9496d95c81774975dc38c.bindTooltip(
+                `<div>
+                     Weicheischuppen Jr.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e10f327531ac4d7a928bde4c449375ee = L.marker(
+                [49.42544339621065, 7.020022583670385],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_fb574c03d86a4395830b71c0328cd319 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_e10f327531ac4d7a928bde4c449375ee.setIcon(icon_fb574c03d86a4395830b71c0328cd319);
+        
+    
+        var popup_493064f29ee2422b838c2f42e0bfb22a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ada3cd3b2dc145f4a6239210230f2b0f = $(`<div id="html_ada3cd3b2dc145f4a6239210230f2b0f" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Saarland Biweekly</h1>                        <strong>Inaktiv, Saarland irgendwo lol</strong>                        <a href=https://discord.gg/phzRTMw >                        <img src="https://i.pinimg.com/564x/0d/7f/c6/0d7fc6c898b6bcb21d88c2fc179248b3.jpg" alt="Selfhtml">                        </a></div>`)[0];
+            popup_493064f29ee2422b838c2f42e0bfb22a.setContent(html_ada3cd3b2dc145f4a6239210230f2b0f);
+        
+
+        marker_e10f327531ac4d7a928bde4c449375ee.bindPopup(popup_493064f29ee2422b838c2f42e0bfb22a)
+        ;
+
+        
+    
+    
+            marker_e10f327531ac4d7a928bde4c449375ee.bindTooltip(
+                `<div>
+                     Saarland Biweekly
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00b8c7be50574eed9c9fd58db928e7bc = L.marker(
+                [51.51536582140485, 7.453517535918273],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_aa10cdcf5ecf4234b63c89f1ce397860 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_00b8c7be50574eed9c9fd58db928e7bc.setIcon(icon_aa10cdcf5ecf4234b63c89f1ce397860);
+        
+    
+        var popup_2eefcfcda44445a3bcd35b577490de51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3234eab32a7e45faa703ccd86b4db4e1 = $(`<div id="html_3234eab32a7e45faa703ccd86b4db4e1" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Dortmunder U Weekly</h1>                        <strong>Inaktiv, Dortmund - Nordrhein-Westfalen</strong>                        <a href=https://discordapp.com/invite/Aba35kP >                        <img src="https://images.smash.gg/images/tournament/245765/image-bd78d52336073b38ca9ad2965568d25a.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_2eefcfcda44445a3bcd35b577490de51.setContent(html_3234eab32a7e45faa703ccd86b4db4e1);
+        
+
+        marker_00b8c7be50574eed9c9fd58db928e7bc.bindPopup(popup_2eefcfcda44445a3bcd35b577490de51)
+        ;
+
+        
+    
+    
+            marker_00b8c7be50574eed9c9fd58db928e7bc.bindTooltip(
+                `<div>
+                     Dortmunder U Weekly
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e8b4ba4debc444a8071624e43b390b1 = L.marker(
+                [51.43674450487581, 6.981844703795047],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_e490a780f978497fadc60add68fbe9f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_0e8b4ba4debc444a8071624e43b390b1.setIcon(icon_e490a780f978497fadc60add68fbe9f9);
+        
+    
+        var popup_6ffbd19cb4b14f83a96fa5d4d3813aef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fd7526247c84bf38b2d01bbc8274149 = $(`<div id="html_0fd7526247c84bf38b2d01bbc8274149" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Halbe Höhe</h1>                        <strong>Inaktiv, Essen - Nordrhein-Westfalen</strong>                        <a href=https://discordapp.com/invite/Aba35kP >                        <img src="https://images.smash.gg/images/tournament/247669/image-6a949d1f7e841b37465e97197fbb5ff7.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_6ffbd19cb4b14f83a96fa5d4d3813aef.setContent(html_0fd7526247c84bf38b2d01bbc8274149);
+        
+
+        marker_0e8b4ba4debc444a8071624e43b390b1.bindPopup(popup_6ffbd19cb4b14f83a96fa5d4d3813aef)
+        ;
+
+        
+    
+    
+            marker_0e8b4ba4debc444a8071624e43b390b1.bindTooltip(
+                `<div>
+                     Halbe Höhe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9770f04b62f64f229c516391bd8c604e = L.marker(
+                [53.05522223674753, 8.783417718227282],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_7e9095bfe63e4b56b764fec2c71c32e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_9770f04b62f64f229c516391bd8c604e.setIcon(icon_7e9095bfe63e4b56b764fec2c71c32e7);
+        
+    
+        var popup_ded6c9a8fc5e414ca3c854f602b0fc97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f88be7f2789c40c6ba145f9bd214cc86 = $(`<div id="html_f88be7f2789c40c6ba145f9bd214cc86" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Bremen Weekly Ultimate</h1>                        <strong>Inaktiv, Bremen</strong>                        <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ >                        <img src="https://images.smash.gg/images/tournament/153267/image-8f8419b57ced0af8b1db3bf0c412ac1e.png?format=auto&width=280&height=280&fit=cover" alt="Selfhtml">                        </a></div>`)[0];
+            popup_ded6c9a8fc5e414ca3c854f602b0fc97.setContent(html_f88be7f2789c40c6ba145f9bd214cc86);
+        
+
+        marker_9770f04b62f64f229c516391bd8c604e.bindPopup(popup_ded6c9a8fc5e414ca3c854f602b0fc97)
+        ;
+
+        
+    
+    
+            marker_9770f04b62f64f229c516391bd8c604e.bindTooltip(
+                `<div>
+                     Bremen Weekly Ultimate
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25972f7be8c44497a3b2549002d73cc9 = L.marker(
+                [51.32347208641141, 9.505827314150553],
+                {}
+            ).addTo(map_69194519e88a4b0b8b39fe2fd30d55d1);
+        
+    
+            var icon_0b419b8d37904132be0323b79ad0bab2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_25972f7be8c44497a3b2549002d73cc9.setIcon(icon_0b419b8d37904132be0323b79ad0bab2);
+        
+    
+        var popup_e4fbd2e1c01e444183ab7c3f61d64ba0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_636f19fbb97641d7bea9a40aef3184bd = $(`<div id="html_636f19fbb97641d7bea9a40aef3184bd" style="width: 100.0%; height: 100.0%;"><h1 style="color: #2b2301;">Smash Department</h1>                        <strong>Inaktiv, Kassel - Hessen</strong>                        <a href=https://discord.com/invite/YMtA3dz>                        <img src="https://pbs.twimg.com/profile_images/1273196029773516806/I2GEpXp-_400x400.jpg" alt="Selfhtml">                        </a></div>`)[0];
+            popup_e4fbd2e1c01e444183ab7c3f61d64ba0.setContent(html_636f19fbb97641d7bea9a40aef3184bd);
+        
+
+        marker_25972f7be8c44497a3b2549002d73cc9.bindPopup(popup_e4fbd2e1c01e444183ab7c3f61d64ba0)
+        ;
+
+        
+    
+    
+            marker_25972f7be8c44497a3b2549002d73cc9.bindTooltip(
+                `<div>
+                     Smash Department
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
